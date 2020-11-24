@@ -14,10 +14,9 @@ Images are made either with Sphinx supported programs like GraphViz or included 
 
 Other details
 -------------
-A discount HP Compaq DC5800 computer was made into a server by installing the Lubuntu 18.04 LTS operating system and the Apache 2 HTTP web server software.
+First a discount HP Compaq DC5800 computer was made into a server by installing the Lubuntu 18.04 LTS operating system and the Apache 2 HTTP web server software. A domain name was purchased from a company so that network directing routers (not only those in a house, but also those that direct network traffic between countries, cities, et cetera) would point to this server.
 
-A domain name was purchased from a company so that network directing routers (not only those in a house, but also those that direct network traffic between countries, cities, et cetera) would point to this server.
-
+I then opted to use a web hosting service since the firewall would close port 80 for reasons I couldn't diagnose, and also to make the website available 24/7 (robust to power outages, moves, and other disturbances on a home server).
 
 Images
 ------

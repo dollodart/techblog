@@ -1,6 +1,5 @@
 import sys
 import sphinx_rtd_theme
-from ase import __version__
 
 sys.path.append('.')
 
