@@ -5,6 +5,7 @@ def right_arrow_func(shift):
         return '>'
     return (shift - 1)*'-' + '>'
 
+
 def left_arrow_func(shift):
     if shift == 0:
         return ''
@@ -12,7 +13,8 @@ def left_arrow_func(shift):
         return '<'
     return '<' + (shift-1)*'-'
 
-def crc_remainder(input_bitstring, polynomial_bitstring, 
+
+def crc_remainder(input_bitstring, polynomial_bitstring,
                   initial_filler='0', shifting='left'):
     """
     Algorithm from Wikipedia.
@@ -38,10 +40,10 @@ def crc_remainder(input_bitstring, polynomial_bitstring,
 
         if shifting == 'left':
             # since the input array is shifting
-            # the operations will not drop down 
+            # the operations will not drop down
             # like in the right shifting case
             st += (' '*(rs - cur_shift) + ''.join(ipadarr) +
-                  left_arrow_func(cur_shift) + '\n')
+                   left_arrow_func(cur_shift) + '\n')
             st += ' '*rs + '^'*len_pb + '\n'
             st += ' '*(rs) + pb + '\n'
         elif shifting == 'right':
@@ -50,18 +52,17 @@ def crc_remainder(input_bitstring, polynomial_bitstring,
             st += ' '*cur_shift+'^'*len_pb + '\n'
         else:
             raise Exception("allowed shift directions "
-                    "are 'left' and 'right'")
-
+                            "are 'left' and 'right'")
 
         for i in range(len_pb):
             if pb[i] == ipadarr[cur_shift + i]:
                 ipadarr[cur_shift + i] = '0'
             else:
-                ipadarr[cur_shift + i ] = '1'
-
+                ipadarr[cur_shift + i] = '1'
 
     st += ''.join(ipadarr)
     return st, ''.join(ipadarr)[len_input:]
+
 
 def polynomialbitstring2polynomialexpression(polynomial_bitstring):
     pb = polynomial_bitstring
@@ -70,6 +71,7 @@ def polynomialbitstring2polynomialexpression(polynomial_bitstring):
         if coeff == '1':
             st += f'x^{pos} + '
     return st.strip(' + ')
+
 
 if __name__ == '__main__':
     # wikipedia test case

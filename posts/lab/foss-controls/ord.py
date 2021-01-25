@@ -12,6 +12,7 @@ def ascii2bits(string):
         bit_string += asci_8
     return bit_string
 
+
 if __name__ == '__main__':
     string = 'hello world'
     print(ascii2bits(string))

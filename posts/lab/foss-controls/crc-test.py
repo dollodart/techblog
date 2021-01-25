@@ -46,7 +46,7 @@ for mb in range(message_bytes):
         for mbmb in range(mb + 1): # include current byte mb
             for byby in range(byte_size):
                 if mbmb == mb: # go up to current bit in current byte
-                    if byby >= by: 
+                    if byby >= by:
                         continue
                 rr = r.copy()
                 m = 1 << by

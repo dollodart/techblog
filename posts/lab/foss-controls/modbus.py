@@ -1,6 +1,6 @@
 def __generate_crc16_table():
     """
-    from pymodbus3 
+    from pymodbus3
     see static table of MODBUS over serial line specification and
     implementation guide V1.02
 
@@ -16,10 +16,10 @@ def __generate_crc16_table():
             different_least_sig_bit = (byte ^ crc) & 0x0001
             if different_least_sig_bit: # remainder = 1
                 # change ls bit to 0
-                crc = (crc >> 1) ^ reciprocal_polynomial 
+                crc = (crc >> 1) ^ reciprocal_polynomial
                 # reciprocal polynomial is A001
                 # which is 1 + x^13 + x^15 + x^16
-                # this is equivalent to operation on 
+                # this is equivalent to operation on
                 # bit reversed input with the usual polynomial
                 # 1 + x^2 + x^15 + x^16
 
@@ -34,12 +34,13 @@ def __generate_crc16_table():
         crc16_table.append(crc)
     return crc16_table
 
+
 __crc16_table = __generate_crc16_table()
 
 
 def compute_crc(data):
-    """ 
-    from pymodbus3 
+    """
+    from pymodbus3
 
     (see algorithm description and C implementation in MODBUS over
     serial line specification and implementation guide V1.02)
@@ -55,20 +56,21 @@ def compute_crc(data):
         idx = __crc16_table[bit8xor] # look up the "byte-CRC"
         # the "byte-CRC" can be non-zero up to the 2 bytes
         # since a 16-bit polynomial is used
-        crc = crc >> 8 # move out last byte 
+        crc = crc >> 8 # move out last byte
         # this byte is set to 0x00 by operations __crc16_table
-        #crc = crc & 0xff # clear first byte 
+        #crc = crc & 0xff # clear first byte
         # unnecessary since default fill value of 0 when right shifting
         crc ^= idx # update CRC with XOR on byte-CRC
     # return lsb first
     #return ((crc << 8) & 0xff00) | ((crc >> 8) & 0x00ff)
     return (crc << 8 | crc >> 8) & 0xffff
 
+
 if __name__ == '__main__':
     # wikipedia example (answer is b880)
     # the example uses a 1 byte spec for address
     # when the protocol calls for 2 bytes
-    # if you zero pad the memory address to 2 bytes 
+    # if you zero pad the memory address to 2 bytes
     # like (0x00, 0x02) the CRC is not the same
 
     print(hex(compute_crc((0x01, 0x04, 0x00, 0x02, 0xff, 0xff))))
