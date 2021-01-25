@@ -7,7 +7,7 @@ There are many layers of abstraction used in the interface of a computer
 and peripherals (from now on just called devices) like process equipment
 microcontrollers. One of the difficulties is that in the abstract
 space of programming, the only thing that exists is the classification
-because you can't see the thing which is being classified . But this
+because you can't see the thing which is being classified. But this
 classification is not strict, and abstraction layers meld into each
 other, especially as technology improves. This difficulty is compounded
 by vernacular which comes from different field and communities and which
@@ -37,7 +37,6 @@ Setting up Communication to Devices
 
 I quote here from the `Unix and Internet Fundamentals HOWTO`_:
 
-::
     many Linux old-timers think the cleverness of Linux's boot-time
     probes (which made it relatively easy to install) was a major reason
     it broke out of the pack of free-Unix experiments to attract a
@@ -45,10 +44,10 @@ I quote here from the `Unix and Internet Fundamentals HOWTO`_:
 
 .. _`Unix and Internet Fundamentals HOWTO`: https://tldp.org/HOWTO/Unix-and-Internet-Fundamentals-HOWTO/
 
-The reason this is relevant is that even within a computer there are
-distinct devices which send data using communication protocols so an
-operating system that is excellent at probing devices in the computer
-will also tend to be excellent at interfacing with external devices.
+The reason this is relevant is that within a computer there are devices
+which send data using communication protocols, so an operating system
+that is excellent at probing devices in the computer will also tend to
+be excellent at interfacing with external devices.
 
 If your process control equipment has a computer in it, by which I
 mean desktop computer running an operating system as found in many
@@ -403,7 +402,7 @@ diversity of devices and protocols USB supports, and the configuration
 channel can anyways be also used as an additional power line.
 
 To plug serial devices into a computer which doesn't have serial
-ports, one can use a serial-USB converter. For serial devices you
+ports, you can use a serial-USB converter. For serial devices you
 take a null modem cable between the internal serial port (or the
 external hub connected by USB) and the port on the device you are
 connecting to. Unlike the modern serial USB, the device shouldn't be
@@ -547,9 +546,8 @@ bits can be understood as a "simple checksum" modulo 2 as elaborated on in
 You can set up permanent configuration settings using ``udev``. For
 example, you can assign a device a descriptive symlink in ``/dev`` which is activated
 when the device is plugged in. Putting the following line in
-``/etc/udev/rules.d/10-local.rules`` accomplishes this:
+``/etc/udev/rules.d/10-local.rules`` accomplishes this:::
 
-::
     SUBSYSTEM=="tty", ATTRS{idVendor}=="FFFF", ATTRS{idProduct}=="FFFF", SYMLINK+="main-pump"
 
 Where you substitute the actual hexadecimal ids of the vendor and product here given FFFF value. 
@@ -706,7 +704,7 @@ and
     sleep(1)
 
     with open('common_file.txt', 'w') as _:
-        # sleep(2) # including this will change the second print to nothing
+        #sleep(2)
         _.write(' hello again')
 
 
@@ -1003,10 +1001,18 @@ inefficient but straightforward for the purpose of instruction:
 
 .. literalinclude:: crc-test.py
 
+
 As reference, see "A PAINLESS GUIDE TO CRC ERROR DETECTION ALGORITHMS"
 for an excellent summary. As the comments in the script indicate, the
 modbus serial line specification gives all the details needed to program
 the CRC for MODBUS serial lines calculation.
+
+Downloads
+---------
+
+- :download:`crc_remainder.py`
+- :download:`modbus.py`
+- :download:`crc-test.py`
 
 Versions
 --------
