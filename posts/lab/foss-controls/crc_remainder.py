@@ -12,10 +12,12 @@ def left_arrow_func(shift):
         return '<'
     return '<' + (shift-1)*'-'
 
-def crc_remainder(input_bitstring, polynomial_bitstring, initial_filler='0', shifting='left'):
+def crc_remainder(input_bitstring, polynomial_bitstring, 
+                  initial_filler='0', shifting='left'):
     """
     Algorithm from Wikipedia.
-    Calculates the CRC remainder of a string of bits using a chosen polynomial.
+    Calculates the CRC remainder of a string of bits
+    using a chosen polynomial.
     Initial_filler should be '1' or '0'.
     Shifting is either 'left' or 'right'.
     """
@@ -36,7 +38,8 @@ def crc_remainder(input_bitstring, polynomial_bitstring, initial_filler='0', shi
 
         if shifting == 'left':
             # since the input array is shifting
-            # the operations will not drop down like in the right shifting case
+            # the operations will not drop down 
+            # like in the right shifting case
             st += (' '*(rs - cur_shift) + ''.join(ipadarr) +
                   left_arrow_func(cur_shift) + '\n')
             st += ' '*rs + '^'*len_pb + '\n'
@@ -46,7 +49,8 @@ def crc_remainder(input_bitstring, polynomial_bitstring, initial_filler='0', shi
             st += right_arrow_func(cur_shift) + pb + '\n'
             st += ' '*cur_shift+'^'*len_pb + '\n'
         else:
-            raise Exception("allowed shift directions are 'left' and 'right'")
+            raise Exception("allowed shift directions "
+                    "are 'left' and 'right'")
 
 
         for i in range(len_pb):

@@ -27,9 +27,12 @@ for mb in range(message_bytes):
         else:
             crcs.append(crc)
 
-print(f'out of {byte_size*message_bytes} possible 1-bit errors in a {message_bytes} byte message',
+print(f'out of {byte_size*message_bytes} possible 1-bit errors '
+      f'in a {message_bytes} byte message',
       f'{count_non_unique} duplicate CRCs were calculated',
-      f'{message_bytes*byte_size - count_non_unique} unique CRCs were calculated',sep='\n')
+      f'{message_bytes*byte_size - count_non_unique} '
+      f'unique CRCs were calculated',
+      sep='\n')
 print('unique CRCs:')
 print(crcs)
 
@@ -40,9 +43,9 @@ tot = 0
 # iterate through pairs
 for mb in range(message_bytes):
     for by in range(byte_size):
-        for mbmb in range(mb + 1): # include current byte mb in iteration
+        for mbmb in range(mb + 1): # include current byte mb
             for byby in range(byte_size):
-                if mbmb == mb: # only go up to current bit in current byte
+                if mbmb == mb: # go up to current bit in current byte
                     if byby >= by: 
                         continue
                 rr = r.copy()
@@ -72,8 +75,10 @@ for mb in range(message_bytes):
 
 assert tot == message_bytes*byte_size*(message_bytes*byte_size - 1) / 2
 
-print(f'out of {tot} possible 2-bit errors in a {message_bytes} byte message',
+print(f'out of {tot} possible 2-bit errors '
+      f'in a {message_bytes} byte message',
       f'{count_non_unique} duplicate CRCs were calculated',
-      f'{tot - count_non_unique} unique CRCs were calculated',sep='\n')
+      f'{tot - count_non_unique} unique CRCs were calculated',
+      sep='\n')
 print('unique CRCs:')
 print(crcs[:100], '...')
