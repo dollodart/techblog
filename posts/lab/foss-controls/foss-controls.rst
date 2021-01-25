@@ -323,7 +323,7 @@ HOWTO. The UART with 16 byte FIFO buffer is the serial device between
 computer memory and CPU and the modem:
 
 .. _`LDP Modem HOWTO`: https://tldp.org/HOWTO/Modem-HOWTO.html
-.. _`schematic of this`: https://tldp.org/HOWTO/Modem-HOWTO-4.html#ss4.10
+.. _`a schematic of this`: https://tldp.org/HOWTO/Modem-HOWTO-4.html#ss4.10
 
 Network cards using the LAN Ethernet hardware standard and IP
 communication protocol are "digital modems" that do the first function
@@ -374,7 +374,7 @@ and the outer communication protocol is managed by the terminal
 emulator. Because of this a discussion of these settings are deferred to
 the :ref:`serial-devices` section where such handshaking with the external device isn't supported.
 
-.. _`screen manual`: https://www.gnu.org/software/screen/manual/screen.html#Window-Types
+.. _`section on tty window types in the screen manual`: https://www.gnu.org/software/screen/manual/screen.html#Window-Types
 
 .. _serial-devices:
 
@@ -549,8 +549,7 @@ example, you can assign a device a descriptive symlink in ``/dev`` which is acti
 when the device is plugged in. Putting the following line in
 ``/etc/udev/rules.d/10-local.rules`` accomplishes this:
 
-.. literalinclude::
-
+::
     SUBSYSTEM=="tty", ATTRS{idVendor}=="FFFF", ATTRS{idProduct}=="FFFF", SYMLINK+="main-pump"
 
 Where you substitute the actual hexadecimal ids of the vendor and product here given FFFF value. 
@@ -834,7 +833,7 @@ FOSS compatible hardware and firmware
 Devices which support industry standard protocols like MODBUS can be
 interfaced on a Linux system. If it is proprietary but the manufacturer
 gives the standard for it, like is the case for, e.g., DASNET at
-mos-spec-controls_, a program can be written for the protocol. Only if
+mod-spec-controls_, a program can be written for the protocol. Only if
 the device has a proprietary communication protocols which is given
 in a binary file distributed with it, e.g., on a disk, will there be
 a problem. Products which have such binary programs for proprietary
@@ -970,8 +969,8 @@ assuming it applies to the whole message and an initial value of the
 remainder of 0. Most of the code is for visualizing the work. The
 polynomial is specified as a bit sequence corresponding to whether or
 not the power of the binary position exists (coefficient of 0 or
-1). That is, the polynomial of ``11000000000000101`` is :math:`x^16 +
-x^15 + x^2 + 1` (note that polynomial bit sequences are usually reported
+1). That is, the polynomial of ``11000000000000101`` is :math:`x^{16} +
+x^{15} + x^2 + 1` (note that polynomial bit sequences are usually reported
 as hexadecimal with an implicit leading 1). This is because of the
 perfect correspondence between arithmetic long division and polynomial
 long division, provided the coefficients can be either 0 or 1. In
