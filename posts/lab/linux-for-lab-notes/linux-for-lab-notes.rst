@@ -89,7 +89,7 @@ In fact, a finite automaton does a character by character match, with
 two catches: it matches the character to one in a provided set, and
 it changes the set it compares the character to based on the current
 character value (for a given pattern, the sequence of characters
-uniquely determine the state at each character in a match at each point
+determine the state at each character in a match at each point
 only based on the current character value).
 
 Finding with Regular Expressions
@@ -390,3 +390,7 @@ libraries support as in-template compile-time code.
 See how compilation based on on Markdown text using the Cheetah template library for python is done at lab-notes_.
 
 .. _lab-notes: https://github.com/dollodart/lab-notes
+
+Versions
+--------
+First posted on 2020-12-29.
