@@ -637,7 +637,7 @@ details on this subject and how the kernel manages and receives signals
 from ports, and now turn to the second part of this post, scripting for
 FOSS controls.
 
-.. _`HOWTO on serial communication`: https://tldp.org/HOWTO/Serial-HOWTO-1.htmlg
+.. _`HOWTO on serial communication`: https://tldp.org/HOWTO/Serial-HOWTO-1.html
 
 .. _control-scripting:
 
