@@ -33,7 +33,7 @@ The cumulative count of Nobel prizes awarded to analytical tools and techniques 
 - 2014: Chemistry for Super Resolved Fluorescent Microscopy 
 - 2017: Chemistry for Cryo-Electron Microscopy
 - 2018: Physics for Laser Optical Tweezers and Laser High Intensity Ultra-Short Optical Pulses
-- 2020: Chemistry for RISPR/Cas9 Genetic Scissors
+- 2020: Chemistry for CRISPR/Cas9 Genetic Scissors
 
 .. image:: images/cumulative-analytical-nobels.png
 
