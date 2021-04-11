@@ -1,5 +1,4 @@
 import sys
-import sphinx_rtd_theme
 
 sys.path.append('.')
 
@@ -12,5 +11,6 @@ source_suffix = '.rst'
 master_doc = 'index'
 project = 'blog'
 authors = 'david ollodart'
-#html_theme = 'sphinx_rtd_theme'
-#html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+html_theme = 'alabaster'
+html_static_path = ['_static/', ]
+html_css_files = ['css/kbd.css',]

@@ -1,0 +1,15 @@
+# has a non-literal meaning of "ignore everything
+between this and the next line feed", and that's even when not
+escaped. Since # is not a control character but a printable ASCII
+character, if it is used for control it must be a non-literal meaning,
+and likewise for all other printable characters used for control in
+program scripts. 
+
+These classifications hold for terminal input. They don't hold
+for programs with a text file (script) input. For example, in
+programming languages the backslash takes the place of a meta key like
+:bd:`ctrl`. However since no alphabetical characters or numbers are meta
+keys, such a distinction is meaningless.
+
+TODO in the previous section I was mostly concerned with escaping literal characters to non-literal interpretation, analogous to how meta keys "escape" literal key input to something else. That is a subset of the case of whether or not a program understands a character to be literal in reference to something, like the character "a" in a variable name over "#" to mean a comment follows. Since the program tokenizes all character groups (words) and parses a structure they represent from those groups, and generally doesn't have the task of reproducing the text, this greater class of literal reference or program instruction is actually meaningless.
+
