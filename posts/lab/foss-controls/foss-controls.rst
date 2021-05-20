@@ -65,9 +65,7 @@ like the one provided by LabJack avoids the need to do low-level
 programming. So I will discuss only the first 3 of the 4. Note I am not
 an expert in these standards and more expert people may disagree with
 this classification, along with other points in this post--please
-direct criticisms by consulting `the contact page`_.
-
-.. _`the contact page`: <http://davidollodart.tech/contact.html>`_.
+direct criticisms by consulting :ref:`the contact page <contact>`.
 
 My rank of electronic complexity and corresponding communication protocols/hardware standards is:
 
