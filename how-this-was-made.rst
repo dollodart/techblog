@@ -28,4 +28,7 @@ From docutils docs I found the following:
     supported by all backends/output formats. (E.g., LaTeX supports the
     PDF or Postscript formats for vector graphics instead.)
 
-I therefore had to use raster images.
+But there is the ``pdf2svg`` program for converting pdf to svg
+format. Therefore, for pdf output graphics, svg could be made, which can
+be included as an image or directly in a raw directive as HTML to allow
+svg object features.
