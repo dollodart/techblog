@@ -8,34 +8,20 @@ ni = 1e10 * 1e6  # m^-3
 # data from http://www.ioffe.ru/SVA/NSM/Semicond/Si/electric.html
 Na = 1.6e16 * 1e6  # m^-3
 Nd = 2 * Na
-tn = 8e-6  # 1/s
-tp = 8e-6  # 1/s
-Ln = 4e-2 * 1e-2  # m
-Lp = 4e-2 * 1e-2  # m
+Dn = 36e-2 # using the inequality from the source
+Dp = 12e-2 # using the inequality from the source
+vtn = 2.3e5
+vtp = 1.65e5
 
 # thermal properties
 T = 300.  # K
 beta = 1 / (kB * T)
 
-# let applied voltage be only 5 times that of
+# let applied voltage be in some ratio with the charge specific thermal energy
 arg = 15
 Va = arg / beta / e  # V
 print(f'Va = {Va:.2E} V such that arg to exponential is {arg}')
 
-# these are 'recombination parameters' in the source, for which tau
-# is a lifetime and not necessarily a scattering time.
-# hence the diffusion relation doesn't apply.
-#
-#Dn = Ln**2 / tn
-#Dp = Ln**2 / tp
-
-#assert Dn*1e4 < 36
-#assert Dp*1e4 < 12
-
-Dn = 36e-2 # using the inequality from the source
-Dp = 12e-2
-vtn = 2.3e5
-vtp = 1.65e5
 ln = sqrt(Dn / vtn)
 lp = sqrt(Dp / vtp)
 DnoverLn = Dn / ln
