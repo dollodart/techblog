@@ -29,27 +29,19 @@ pith ball experiments indicated that a material could be charged to either
 opposite signs, they did not indicate which sign of the charge carrier, or even
 that there was only one charge carrier with one sign.
 
-For 150 years in the study of heat transport there was the caloric fluid theory
-which hypothesized a calorific fluid which contained heat (from late 18th
-century to mid 19th century). Heat flowed from regions with an excess of
-calorific fluid to regions with a deficiency of calorific fluid. The caloric
+For 150 years, from the late 18th century to mid-19th centurey, the study of
+heat evolution and transport was done under the caloric theory which
+hypothesized a fluid form of heat called caloric. Caloric flowed from regions
+with an excess of fluid to regions with a deficiency of fluid. The caloric
 fluid theory failed when experiments verified the mechanical theory of heat,
 that is, heat is transported by the collisions of particles transferring
-energy. It was around the same time that calorific fluid was introduced that
-the basics of electricity were being discovered (Franklin's pith ball
-experiments occured in the mid 18th century slightly before this). When
-electric current was discovered by scientists working on batteries (Volta
-invented the battery in 1800), it was thought to be the flow of the
-hypothesized electrical fluid from regions with an excess of it to regions with
-a deficiency of it. And unlike heat, it turned out to be correct that there is
-an electrical fluid, of a sort.
-
-..
-    Invisible fluids were very common in physics at that time, and it would
-    take the same time needed to find the sign of the charge carrier to also
-    prove that the luminiferous ether in which light supposedly traveled didn't
-    exist. 
-
+energy. It was around the same time that caloric fluid was introduced that the
+basics of electricity were being discovered; Franklin's pith ball experiments
+occured in the mid 18th century. When electric current was discovered by
+scientists working on batteries (Volta invented the battery in 1800), it was
+thought to be the flow of the hypothesized electrical fluid from regions with
+an excess of it to regions with a deficiency of it [#]_. And unlike heat, it turned
+out to be correct that there is an electrical fluid, of a sort.
 
 J. J. Thomson's work on cathode rays in 1897 showed that charge is
 transported by carriers of one charge, one that flowed opposite the
@@ -201,6 +193,13 @@ function of a one way valve for charge.
 .. rubric:: Footnotes
 
 .. [#]
+
+    Invisible fluids were commonly postulated in physics at that time. It would
+    take the same time needed to find the sign of the charge carrier to also
+    prove that the luminiferous ether in which light supposedly traveled didn't
+    exist. 
+
+.. [#]
   The author prefers the term mass specific charge, since ratios are for
   like-dimensioned quantities, but this is the convention. Notably, Euclid
   defined a ratio in Book V Definition 3 as "a sort of relation in respect of
@@ -326,73 +325,80 @@ vacuum triode in the off state.
 Solid State Devices
 -------------------
 
-In order to explain how a transistor works, some particular properties
-of semiconductors, the material for solid state devices, must be explained. In particular, there must
-be an introduction of the concept of a hole. Like a conventional hole
-is the absence of dirt, a hole in semiconductors is the absence of an
-electron. It is in everyway analogous and opposite to an electron:
-holes have a negative wave vector, a negative energy, and a negative
-mass, which results in them acting like a positive charge carrier
-[#]_. It may then be asked, how can the fact that charge carriers are
-negatively charged, as opposed to gas particles, be exploited if there
-is a symmetric counterpart, the positively charged hole? Some points bear
-mentioning:
+In order to explain how a transistor works, some particular properties of
+semiconductors, the material for solid state devices, must be explained. In
+particular, there must be an introduction of the concept of a hole. Like a
+conventional hole is the absence of dirt, a hole in semiconductors is the
+absence of an electron. Classically it behaves like a positron [#]_.  It may
+then be asked, how can the fact that charge carriers are negatively charged, as
+opposed to gas particles, be exploited if there is a symmetric counterpart, the
+positively charged hole? 
 
-#. The case of uncharged particles is distinct to that of two oppositely
-   charged particles. In particular, there can be materials which are mostly
-   having excess positively charged mobile particles (holes), and materials
-   which are mostly having excess negatively charged mobile particles
-   (electrons). However, the asymmetry of protons and electrons is necessary
-   not only for the function of vacuum devices but also solid state ones, so
-   this point doesn't answer the question.
+The case of uncharged particles is distinct to that of two oppositely charged
+particles. In particular, there can be materials which are mostly having excess
+positively charged mobile particles (holes), and materials which are mostly
+having excess negatively charged mobile particles (electrons). The
+specification of mobile is here key, because by charge balance with positively
+charged protons there must be more electrons than holes in any material. If the
+two oppositely charged charge carriers existed in the same material, and they
+must by charge balance, then classically they would be expected to annihilate.
+This can be accounted for in a classical model by simply supposing there are immobile
+electrons which can't annihilate with mobile holes, and that is done here. 
 
-#. The hole is an absence of an electron is not a true particle. Every piece of
-   experimental evidence is in support of the hypothesis that charge is
-   transported by electrons everywhere [#]_. The case of a charged particle and
-   a fictitious particle which is its absence is distinct from the case of two
-   charged particles, each of which would have its respective fictitious
-   particle by its absence. While a positron is an electron with positive
-   charge, a hole is an electron with negative wave vector, negative energy,
-   and negative mass. While the hole has an equation of motion identical to a
-   positron, in the more sophisticated theory than that is presented here, it
-   lives in a valence band as a result of being an absence of a hole, and so
-   isn't in any way physically like a positron (which would exist in a high
-   energy state in a conduction band in order to transport).
+Also, a hole is an absence of an electron and so a fictitious particle. While
+it is modeled as a particle there remains the same asymmetry as required, since
+there is no real positive charge carrier. Not only are holes consistent with
+the required asymmetry, but transistors require the existence of holes [#]_.
+However, one might as well say that deficiencies of electrons are required for
+transistors, since the hole is merely a fictious particle used to model the
+physically true phenomenon of a deficiency of electrons. And holes are only
+necessary for quantum mechanical models, as in the above footnote reference.
+Here electron deficiency will be treated as positrons floating above immobile
+electrons, and this is adequate for the classical model. Imposing the
+immobility condition preserves the asymmetry in the classical model where one
+considers electrons and positrons in the same material. These choices are
+simply requirements for the model and have no physical bearing: every point of
+experimental evidence is that charge is transported by electrons, the only real
+charge carriers [#]_. 
 
-In fact, as it turns out, transistors require the existence of holes. [#]_
+I will continue to refer to the positive charge carriers modeled as positrons
+with the quantum mechanical term hole, like I did in the preceding two paragraphs. 
 
-The materials with excess holes are called :math:`p`-type (for positive), those with 
-excess electrons :math:`n`-type (for negative). When these materials are
-arranged the transistor can be made. Again, a :math:`p`-type
-material will conduct electricity in either direction, as will an
-:math:`n`-type material---it is only their arrangement that can control
-the direction of flow.
+The materials with excess holes are called :math:`p`-type (for positive), those
+with excess electrons :math:`n`-type (for negative). When these materials are
+arranged the transistor can be made. Again, a :math:`p`-type material will
+conduct electricity in either direction, as will an :math:`n`-type
+material---it is only their arrangement that can control the direction of flow.
 
 Where do the excess charge carriers in :math:`p`- and :math:`n`-type materials
-come from? The excess charge carriers are a result of an absence or
-abundance of protons from a process called doping [#]_. Doping introduces atoms
-with nuclei whose proton number is more (:math:`n`-type) or less
-(:math:`p`-type) than the nuclei of the host material. These atoms ionize
-because the neighboring host atoms have too few or too many electrons to
-satisfy their chemical valence, and the result of that ionization are charge
-carriers.  This ionization conserves electroneutrality---an :math:`n`-type
-material is not negatively charged nor is a :math:`p`-type material positively
-charged. The doping atoms release or trap electrons and generate charge
-carriers while remaining immobile, again showing the asymmetry of matter is
-necessary for the function of solid state devices.
+come from? The excess charge carriers are a result of adding different nuclei
+with different chemical valence requirements leading to trapped or liberated
+electrons which otherwise would be in bonds. This is accomplished through a
+process called doping [#]_. Doping introduces atoms with nuclei whose proton
+number is more (:math:`n`-type) or less (:math:`p`-type) than the nuclei of the
+host material. These atoms ionize because the neighboring host atoms have too
+few or too many electrons to satisfy their chemical valence, and the result of
+that ionization are mobile electrons or holes depending on if the ion is
+positively or negatively charged .  This ionization conserves
+electroneutrality---an :math:`n`-type material is not negatively charged nor is
+a :math:`p`-type material positively charged. The doping atoms release or trap
+electrons and generate charge carriers while remaining immobile, again showing
+the asymmetry of matter is necessary for the function of solid state devices.
+This is the origin of the justification that there are immobile and mobile
+particles, though the justification for why they don't annihilate with each
+other requires the hole to be defined as an absence of an electron with
+peculiar properties like negative mass, not just a positron.
 
 .. rubric:: Footnotes
 
 .. [#]
-  Kittel, Solid State Physics, 8th Edition, Chapter 8. An actual positive
-  charge carrier, like the positron, has positive mass---it is only the
-  behavior with respect to electric current that is identical.
+  In quantum mechanical models, a hole is in everyway analogous and opposite to
+  an electron: holes have a negative wave vector, a negative energy, and a
+  negative mass, which results in them acting like a positive charge carrier in
+  the band theory.  See Kittel, Solid State Physics, 8th Edition, Chapter 8. 
 
 .. [#]
   See nanoHUB-U: Thermoelectricity: From Atoms to Systems: Unit 1: Bottom Up Approach by Supriyo Datta.
-
-.. [#]
-  See also Kittel, Solid State Physics, 8th Edition, Chapter 8.
 
 .. [#]
   Doping is a process which usually involves shooting beams of high energy
