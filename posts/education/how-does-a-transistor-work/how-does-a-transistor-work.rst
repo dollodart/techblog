@@ -64,28 +64,35 @@ Since :math:`m_-/c \ll m/(2c)`, it follows that :math:`m_+ \approx m`.
 
 Rutherford's gold foil experiment in 1908 proved that the positive charged
 material wasn't distributed continuously in matter, but concentrated in small
-nuclei. Now not only was the charge-to-mass ratio significantly different, but
-so too was the mass-to-volume ratio. Matter was found to be mostly empty [#]_
-with a small nucleus of positive charge surrounded by electrons. Rutherford
-discovered the volume of the nuclei, approximately, through an analysis of the
-scattering of the alpha particles using the same gold foil experiment.
-Rutherford later found that the nuclei of all elements is made of the same
-nucleus as that of hydrogen, and he called that unit a proton. The proton has
-the same charge as an electron, but is 1835 times more massive. 
+nuclei. Now not only was the charge-to-mass ratio more than three orders of
+magnitude greater for the positive charge, but the mass-to-volume ratio was
+even more disparate. A plum-pudding model proposed by J. J. Thomspon before the
+gold foil experiment would have had the mass-to-volume ratios more similar than
+the charge-to-mass ratios, with plum-like electrons embedded in pudding-like
+positive charge. Matter was found to be mostly empty [#]_ with a small nucleus
+of positive charge surrounded by electrons. Rutherford discovered the volume of
+the nuclei, approximately, through an analysis of the scattering of the alpha
+particles using the same gold foil experiment.  Rutherford later found that the
+nuclei of all elements is made of the same nucleus as that of hydrogen, and he
+called that unit a proton. The proton has the same charge as an electron, but
+is 1835 times more massive. 
 
-Though electrons don't have a radius, if one uses the "classical electron
-radius" which is based off some other parameters, the electron volume is 37
-times greater than the proton (the mass-to-volume ratio of an electron is
-therefore 67,895 times less than that of a proton). If one were to take the
+To quantify the mass-to-volume ratio requires some assumptions because
+electrons aren't classical particles with a radius. But one can use the
+"classical electron radius" which is based off fundamental field constants (not
+quantum mechanical parameters), and in that case the electron volume is 37
+times greater than the proton. The mass-to-volume ratio of an electron is
+therefore 67,895 times less than that of a proton. If one were to take the
 electron cloud volume, which is the atom volume, the electron volume is 3
-thousand trillion times greater than the proton volume. Matter was discovered
-to be made of very asymmetric parts. This fact had eluded all investigators in
-previous experiments where such asymmetry couldn't be observed, and would
-subsequently be exploited both in vacuum and later solid-state devices.
+thousand trillion times greater than the proton volume, and the mass-to-volume
+ratio is that times 1835 greater for the electron than the proton. 
 
-The below table summarizes the differences between the proton and
-electron, where the smaller quantity is assigned a value of 1 and the
-other is given as multiples of that smaller quantity:
+Matter was discovered to be made of very asymmetric parts. This fact had eluded
+all investigators in previous experiments where such asymmetry couldn't be
+observed, and would subsequently be exploited both in vacuum and later
+solid-state devices. The below table summarizes the differences between the
+proton and electron, where the smaller quantity is assigned a value of 1 and
+the other is given as multiples of that smaller quantity:
 
 +----------+----------+----------+
 | quantity | proton   | electron | 
