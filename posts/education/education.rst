@@ -8,3 +8,4 @@ Education
    :maxdepth: 1
 
    terminal/terminal
+   how-does-a-transistor-work/how-does-a-transistor-work
