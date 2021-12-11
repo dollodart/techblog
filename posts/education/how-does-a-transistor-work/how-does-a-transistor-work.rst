@@ -43,12 +43,15 @@ thought to be the flow of the hypothesized electrical fluid from regions with
 an excess of it to regions with a deficiency of it [#]_. And unlike heat, it turned
 out to be correct that there is an electrical fluid, of a sort.
 
-J. J. Thomson's work on cathode rays in 1897 showed that charge is
-transported by carriers of one charge, one that flowed opposite the
-direction of current as defined by convention, and so it was assigned
-to be negative. The charge carriers were found to be particles, not an
-indivisible fluid. It was called the electron because it is the particle
-of electricity.
+J. J. Thomson's work on cathode rays in 1897 showed that charge is transported
+by carriers of one charge, one that flowed opposite the direction of current as
+defined by convention, and so it was assigned to be negative. Cathode rays were
+known to result from heated filaments in vacuum tubes, but J. J. Thomson
+discovered they would conduct current only under a certain sign of cathode to
+anode voltage, namely, positive (this fact is directly used to make the
+:ref:`vacuum-diode`). The charge carriers were found to be particles, not an
+indivisible fluid. It was called the electron because it is the particle of
+electricity.
 
 Part of J. J. Thomson's work found the charge-to-mass ratio [#]_ of electrons,
 from which the mass of an electron could be calculated. That mass was far too
@@ -73,7 +76,7 @@ positive charge. Matter was found to be mostly empty [#]_ with a small nucleus
 of positive charge surrounded by electrons. Rutherford discovered the volume of
 the nuclei, approximately, through an analysis of the scattering of the alpha
 particles using the same gold foil experiment.  Rutherford later found that the
-nuclei of all elements is made of the same nucleus as that of hydrogen, and he
+nuclei of all elements are made of the same nucleus as that of hydrogen, and he
 called that unit a proton. The proton has the same charge as an electron, but
 is 1835 times more massive. 
 
@@ -111,19 +114,19 @@ The science of electric motion was developed after Ben Franklin's studies of
 static electricity. Alessandro Volta discovered electric current resulted from
 chemical reactions in dissimilar metals arranged in a voltaic pile; Hans
 Christian Ørsted found a relation between electric current and magnetic
-deflection in compass needles; Michael Faraday discovered also a relation
-between electric current and deflection (in the rotation of a rod suspended in
-mercury), developed much of electrochemical science, and created the theory of
-electric fields; André-Marie Ampère, Jean-Baptiste Biot, and Félix Savart
-discovered various laws for the electric and magnetic forces on charges in
-motion; and James Clerk Maxwell formalized the existing experimental results in
-the theory of electromagnetism. This list isn't exhaustive, of either the work
-of those named or of the scientists who contributed to the development of
-electricity and magnetism. These scientists, among others, were working from
-the late 18th century to the mid 19th century. The science of electric motion
-developed before the sign of the charge carrier was discovered, which was
-possible because the observed phenomena were independent of the sign of a
-charge carrier.
+deflection in compass needles; Michael Faraday discovered a prototypical
+electric motor, the magneto-optical effect which suggested light was an
+electromagnetic wave, developed the majority of electrochemical science, and
+created the theory of electric fields; André-Marie Ampère, Jean-Baptiste Biot,
+and Félix Savart discovered various laws for the electric and magnetic forces
+on charges in motion; and James Clerk Maxwell formalized the existing
+experimental results in the theory of electromagnetism. This list isn't
+exhaustive, of either the work of those named or of the scientists who
+contributed to the development of electricity and magnetism. These scientists,
+among others, were working from the late 18th century to the mid 19th century.
+The science of electric motion developed before the sign of the charge carrier
+was discovered, which was possible because the observed phenomena were
+independent of the sign of a charge carrier.
 
 For the current purposes of explaining the transistor, it suffices to
 discuss not the quantitative laws but the qualitative theory of electric
@@ -200,11 +203,10 @@ function of a one way valve for charge.
 .. rubric:: Footnotes
 
 .. [#]
-
-    Invisible fluids were commonly postulated in physics at that time. It would
-    take the same time needed to find the sign of the charge carrier to also
-    prove that the luminiferous ether in which light supposedly traveled didn't
-    exist. 
+  Invisible fluids were commonly postulated in physics at that time. It would
+  take the same time needed to find the sign of the charge carrier to also
+  prove that the luminiferous ether in which light supposedly traveled didn't
+  exist. 
 
 .. [#]
   The author prefers the term mass specific charge, since ratios are for
@@ -336,10 +338,9 @@ In order to explain how a transistor works, some particular properties of
 semiconductors, the material for solid state devices, must be explained. In
 particular, there must be an introduction of the concept of a hole. Like a
 conventional hole is the absence of dirt, a hole in semiconductors is the
-absence of an electron. Classically it behaves like a positron [#]_.  It may
-then be asked, how can the fact that charge carriers are negatively charged, as
-opposed to gas particles, be exploited if there is a symmetric counterpart, the
-positively charged hole? 
+absence of an electron. It may then be asked, how can the fact that charge
+carriers are negatively charged, as opposed to gas particles, be exploited if
+there is a symmetric counterpart, the positively charged hole? 
 
 The case of uncharged particles is distinct to that of two oppositely charged
 particles. In particular, there can be materials which are mostly having excess
@@ -354,19 +355,19 @@ electrons which can't annihilate with mobile holes, and that is done here.
 
 Also, a hole is an absence of an electron and so a fictitious particle. While
 it is modeled as a particle there remains the same asymmetry as required, since
-there is no real positive charge carrier. Not only are holes consistent with
-the required asymmetry, but transistors require the existence of holes [#]_.
-However, one might as well say that deficiencies of electrons are required for
-transistors, since the hole is merely a fictious particle used to model the
-physically true phenomenon of a deficiency of electrons. And holes are only
-necessary for quantum mechanical models, as in the above footnote reference.
-Here electron deficiency will be treated as positrons floating above immobile
-electrons, and this is adequate for the classical model. Imposing the
-immobility condition preserves the asymmetry in the classical model where one
-considers electrons and positrons in the same material. These choices are
-simply requirements for the model and have no physical bearing: every point of
-experimental evidence is that charge is transported by electrons, the only real
-charge carriers [#]_. 
+there is no real positive charge carrier. Holes are consistent with the
+required asymmetry, and it is even said that transistors "require" the
+existence of holes [#]_.  However, one might as well say that transistors
+require a deficiency of electrons , since the hole is merely a fictious
+particle used to model the physically true phenomenon of a deficiency of
+electrons. And holes are only necessary for quantum mechanical models, as in
+the above footnote reference.  Here electron deficiency will be treated as
+positrons floating above immobile electrons, and this is adequate for the
+classical model. Imposing the immobility condition preserves the asymmetry in
+the classical model where one considers electrons and positrons in the same
+material. These choices are simply requirements for the model and have no
+physical bearing: every point of experimental evidence is that charge is
+transported by electrons, the only real charge carriers [#]_.
 
 I will continue to refer to the positive charge carriers modeled as positrons
 with the quantum mechanical term hole, like I did in the preceding two paragraphs. 
@@ -386,7 +387,7 @@ number is more (:math:`n`-type) or less (:math:`p`-type) than the nuclei of the
 host material. These atoms ionize because the neighboring host atoms have too
 few or too many electrons to satisfy their chemical valence, and the result of
 that ionization are mobile electrons or holes depending on if the ion is
-positively or negatively charged .  This ionization conserves
+positively or negatively charged.  This ionization conserves
 electroneutrality---an :math:`n`-type material is not negatively charged nor is
 a :math:`p`-type material positively charged. The doping atoms release or trap
 electrons and generate charge carriers while remaining immobile, again showing
@@ -422,17 +423,16 @@ peculiar properties like negative mass, not just a positron.
 The Semiconductor Diode
 -----------------------
 
-Many people explain semiconductor function with basic solid state
-physics derived from quantum mechanics, which includes transitions
-between electron bands and forces induced on conduction band electrons
-from band bending. However, for the current purposes, a classical
-view of electrons as charges being moved by lines of forces in an
-electric field is sufficient [#]_. First I explain the function of a
-:math:`p`-:math:`n` junction, which is the working principle of
-a semiconductor diode and is one step before the transistor, a
-semiconductor triode.
+Many people explain semiconductor function with basic solid state physics
+derived from quantum mechanics, which includes transitions between electron
+bands and forces induced on conduction band electrons from band bending.
+However, for the current purposes, a classical view of electrons (and holes) as
+charges being moved by lines of forces in an electric field is sufficient [#]_.
+First I explain the function of a :math:`p`-:math:`n` junction, which is the
+working principle of a semiconductor diode and is one step before the
+transistor, a semiconductor triode.
 
-A :math:`p`-:math:`n` junction results from the (hypothetical) joining of
+A :math:`p`-:math:`n` junction results from the hypothetical joining of
 :math:`p`- and :math:`n`-type regions (in practice the regions are made by
 differently doping regions of the same host material). The nominal junction is
 the hypothetical plane abruptly separating the :math:`p`- and :math:`n`-type
@@ -453,24 +453,24 @@ Depletion Layer at Zero Bias
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 What happens when the :math:`p`- and :math:`n`-type regions are hypothetically
-brought together? Ideally no current flows [#]_. You can
-think of the :math:`p`-type region as a lattice of negatively charged dopants
-with mobile holes (the lattice is superimposed on the crystal structure of the
+brought together? Ideally no current flows [#]_. You can think of the
+:math:`p`-type region as a lattice of negatively charged dopants with mobile
+holes (the lattice is superimposed on the crystal structure of the
 semiconductor, but it is much larger, since dopant densities are 1 million
 times less than the atom density).  Similarly, the :math:`n`-type region is a
-lattice of positively charged dopants and mobile electrons. When a :math:`p`-type
-region and an :math:`n`-type region are brought together, the holes and
-electrons near the interface annihilate each other, and what is left are the
-dopant lattices in something called the depletion layer. So the depletion layer
-in the :math:`p`-type region is negatively charged, and the depletion layer in
-the :math:`n`-type region is positively charged. Away from the interface, the
-electrons in the :math:`n`-type region far from the interface are attracted to
-the positive lattice, and the holes in the :math:`p`-type region far from the
-interface are attracted to the negative lattice, but because of
-electroneutrality and the fact that carriers in the regions far from the
-interface are also attracted to their own regions, the resulting profile of
-charge carrier density is depleted (zero) in a layer around the
-:math:`p`-:math:`n` junction.
+lattice of positively charged dopants and mobile electrons. When a
+:math:`p`-type region and an :math:`n`-type region are brought together, the
+holes and electrons near the interface annihilate each other, and what is left
+are the dopant lattices in something called the depletion layer. So the
+depletion layer in the :math:`p`-type region is negatively charged, and the
+depletion layer in the :math:`n`-type region is positively charged. Away from
+the interface, the electrons in the :math:`n`-type region far from the
+interface are attracted to the positive lattice, and the holes in the
+:math:`p`-type region far from the interface are attracted to the negative
+lattice, but because of electroneutrality and the fact that carriers in the
+regions far from the interface are also attracted to their own regions, the
+resulting profile of charge carrier density is depleted (zero) in a layer
+around the :math:`p`-:math:`n` junction.
 
 .. figure:: figs/depletion-layer-1.svg
    :alt: qualitative schematic of p-n junction made from hypothetically joined p- and n-type regions prior to depletion
@@ -485,7 +485,7 @@ charge carrier density is depleted (zero) in a layer around the
    not be arranged in such a symmetric way, but randomly distributed on the
    length scale. Here the length scale is 50 nanometers. On average a cube with
    edge length 50 nanometers will have 2 dopants, 1 at the center, and 1/8 of
-   one at each corner. This gives :math:`2/(50 {\rm nm})^3 = 1.6e+16 {\rm cm}^{-3}` dopant density,
+   one at each corner. This gives :math:`2/(50 {\rm nm})^3 = 1.6\cdot 10^{16} {\rm cm}^{-3}` dopant density,
    which is a representative dopant (and therefore carrier) density in old
    devices where the depletion layer is relatively thick.  What is shown isn't
    the zero bias depletion layer width for silicon or any other material, but
@@ -1072,3 +1072,8 @@ depicted quantities. The calculation file is included below (download:
 :download:`calcs.py`).
 
 .. literalinclude:: calcs.py
+
+Versions
+--------
+
+First posted on 2021-12-10.
