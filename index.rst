@@ -59,10 +59,12 @@ Resources I have found useful:
 - `Tera Labs`_: At-home physics experiments in vacuum, electricity and magnetism. These at-home experiments show the fundamental physics behind apparatus.
 - `The Linux Documentation Project`_: In particular see the Linux Serial HOWTO in the linux documentation project. All links to the "Linux Lab Project" started by Claus Schroeter of Berlin's Freie Universitaet are broken, which would be most relevant. However guides on networking and serial communications are valuable.
 - `Martindale Center`_: Website maintained full-time by a former consultant with links to calculators for many applications.
+- `Feldman Consulting Enterprises, LLC`_: These are industrial solutions which include custom PCBs and robotics which can even be mass manufactured in some instances. Because it is commercial, the level of detail presented is not great. But it shows just how much can be accomplished with FOSS and open-source hardware (Arduino is based on Linux operating systems and its programs are made in C and derivatives). See in particular instrumentation cases.
 
 .. _`The Linux Documentation Project`: https://www.tldp.org
 .. _`Tera Labs`: http://www.teralab.co.uk
 .. _`Martindale Center`: https://www.martindalecenter.com
+.. _`Feldman Consulting Enterprises, LLC`: http://feldmanbd.com/arduinoinstrumentation.aspx
 
 Internal Links
 --------------
