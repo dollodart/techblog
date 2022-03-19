@@ -50,6 +50,20 @@ There is a growing interest in machine learning and then artificial intelligence
 
 I suspect the growth of consulting firms in chemical engineering, which was the largest growing sector in the mid 2010s, is mostly due to an inability of the industry to implement well-established best practices. Unlike industry, university labs cannot afford consultants, and so this is an attempt to provide practical advice to implement well-established practices. The posts in this blog should assist a novice student with implementing open source hardware and software. Nothing here is functionally more advanced than what exists and is implemented in some parts, usually high-tech, of industry. The emphasis is on low cost and ease of implementation.
 
+Internal Links
+--------------
+
+See also the sidebar:
+
+.. toctree::
+   :maxdepth: 1
+
+   posts/posts
+   contact
+   how-this-was-made
+   foss-alternatives
+   why-should-foss-controls-be-possible
+
 External Links
 --------------
 Resources I have found useful:
@@ -70,15 +84,3 @@ Resources that are likely useful:
 .. _`Feldman Consulting Enterprises, LLC`: http://feldmanbd.com/arduinoinstrumentation.aspx
 .. _`Dabeaz`: http://dabeaz.com/
 .. _`V. T. Toth`: https://www.vttoth.com/CMS/books/2-linux-a-network-solution-for-your-office
-
-Internal Links
---------------
-
-.. toctree::
-   :maxdepth: 1
-
-   posts/posts
-   contact
-   how-this-was-made
-   foss-alternatives
-   why-should-foss-controls-be-possible
