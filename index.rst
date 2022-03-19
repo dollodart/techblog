@@ -50,21 +50,26 @@ There is a growing interest in machine learning and then artificial intelligence
 
 I suspect the growth of consulting firms in chemical engineering, which was the largest growing sector in the mid 2010s, is mostly due to an inability of the industry to implement well-established best practices. Unlike industry, university labs cannot afford consultants, and so this is an attempt to provide practical advice to implement well-established practices. The posts in this blog should assist a novice student with implementing open source hardware and software. Nothing here is functionally more advanced than what exists and is implemented in some parts, usually high-tech, of industry. The emphasis is on low cost and ease of implementation.
 
-The Need for Liberalization
-
 External Links
 --------------
 Resources I have found useful:
 
-- `Tera Labs`_: At-home physics experiments in vacuum, electricity and magnetism. These at-home experiments show the fundamental physics behind apparatus.
+- `Tera Labs`_: At-home physics experiments in vacuum, electricity and magnetism. These at-home experiments show the fundamental physics behind apparatus, which too often lab workers are ignorant of.
 - `The Linux Documentation Project`_: In particular see the Linux Serial HOWTO in the linux documentation project. All links to the "Linux Lab Project" started by Claus Schroeter of Berlin's Freie Universitaet are broken, which would be most relevant. However guides on networking and serial communications are valuable.
 - `Martindale Center`_: Website maintained full-time by a former consultant with links to calculators for many applications.
-- `Feldman Consulting Enterprises, LLC`_: These are industrial solutions which include custom PCBs and robotics which can even be mass manufactured in some instances. Because it is commercial, the level of detail presented is not great. But it shows just how much can be accomplished with FOSS and open-source hardware (Arduino is based on Linux operating systems and its programs are made in C and derivatives). See in particular instrumentation cases.
+- `Feldman Consulting Enterprises, LLC`_: These are industrial solutions which include custom PCBs and robotics which can even be mass manufactured in some instances. Because it is commercial, the level of detail presented is not great. But it shows just how much can be accomplished with FOSS and open-source hardware (Arduino is based on Linux operating systems and its programs are made in C and derivatives). See in particular Feldman's instrumentation cases.
+- `Dabeaz`_: David Beazley is a Python educator and has written many python educational texts and articles. His Usenix ;login: contributions are always informative and for FOSS controls in particular those on asynchronous communications are helpful. The approach given here (see :doc:`posts/lab/foss-controls/foss-controls`) for effectively asynchronous communication just uses the operating system to manage read/write access to common files. There are performance, scaling, and portability reasons to use asynchronous protocols or multiprocessing within the python application. Threading may increase speed significantly when the program is rate-limited from waiting on I/O calls, and multiprocessing, by spawning truly independent processes on different cores of the CPU, may increase speed in any case, including when the program is rate-limited by its own computations. A highly accessible article is at https://realpython.com/python-concurrency/ and the author (not David Beazley) has several posts on concurrency in python. 
+
+Resources that are likely useful:
+
+- `V. T. Toth`_: Linux has long been recognized as a superior low cost solution for computer networking, and the recommendations made here to use FOSS (on Linux OS) are far from novel, even for laboratories (see Claus Schroeter's Linux Lab Project). V. T. Toth authored a book in 1999 on using Caldera OpenLinux to make a computing and networking solution on a 'shoestring budget' for a home or small office. In fact, there are many such books about installing Linux which emerged around that time period, and I can't say whether this or another is best (I am partial to the author for unrelated reasons of his expositions on physics). It is also the case that commercialized Linux, such as Ubuntu, has made set-up of many services much simpler than at the time most of these books were authored. Because laboratory function is a superset of office function, to the extent guides such as Toth's are not dated they should be useful.
 
 .. _`The Linux Documentation Project`: https://www.tldp.org
 .. _`Tera Labs`: http://www.teralab.co.uk
 .. _`Martindale Center`: https://www.martindalecenter.com
 .. _`Feldman Consulting Enterprises, LLC`: http://feldmanbd.com/arduinoinstrumentation.aspx
+.. _`Dabeaz`: http://dabeaz.com/
+.. _`V. T. Toth`: https://www.vttoth.com/CMS/books/2-linux-a-network-solution-for-your-office
 
 Internal Links
 --------------
@@ -77,4 +82,3 @@ Internal Links
    how-this-was-made
    foss-alternatives
    why-should-foss-controls-be-possible
-
