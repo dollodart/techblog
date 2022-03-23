@@ -9,3 +9,4 @@ Laboratory
 
    linux-for-lab-notes/linux-for-lab-notes
    foss-controls/foss-controls
+   serial-communications/serial-communications
